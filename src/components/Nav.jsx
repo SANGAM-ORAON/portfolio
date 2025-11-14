@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,12 +22,11 @@ export default function Navbar() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex gap-8 text-sm md:text-base">
-          <h4 className=" hover:text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp">Home</h4>
-          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp">Skills</h4>
-          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp">Projects</h4>
-          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp">About</h4>
-          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp">Contact</h4>
-          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp">Icon</h4>
+          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp"><Link to='/'>Home</Link></h4>
+          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp"><Link to='/skills'>Skills</Link></h4>
+          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp"><Link to='/projects'>Projects</Link></h4>
+          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp"><Link to='/about'>About</Link></h4>
+          <h4 className=" hover:text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp"><Link to='/contact'>Contact</Link></h4>
         </div>
       </div>
 
@@ -46,12 +46,11 @@ export default function Navbar() {
 
         {/* Menu items */}
         <div className="mt-16 flex flex-col gap-6 px-6 text-base">
-          <h4>Home</h4>
-          <h4>Skills</h4>
-          <h4>Projects</h4>
-          <h4>About</h4>
-          <h4>Contact</h4>
-          <h4>Icon</h4>
+          <h4><Link to='/'>Home</Link></h4>
+          <h4><Link to='/skills'>Skills</Link></h4>
+          <h4><Link to='/projects'>Projects</Link></h4>
+          <h4><Link to='/about'>About</Link></h4>
+          <h4><Link to='/contact'>Contact</Link></h4>
         </div>
       </div>
 

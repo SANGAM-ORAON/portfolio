@@ -1,12 +1,14 @@
 import React from "react";
-import Skills from "./Skills";
-import Projects from "./Projects";
+import Nav from "../components/Nav"
+import Footer from "../components/Footer"
+import {Link} from 'react-router-dom'
+import Resume from '../assets/resume.pdf'
 
 const Home = () => {
   return (
 <div className="overflow-hidden text-white font-sans scroll-smooth bg-[#000015]">
-
-  {/* 🏠 HOME SECTION */}
+<Nav/>
+  {/* HOME SECTION */}
   <section className="bg-linear-to-r from-[#000015] via-[#22638f] to-[#000015] 
                      flex flex-col-reverse md:flex-row items-center justify-center 
                      min-h-screen px-6 sm:px-10 md:px-16 lg:px-24 
@@ -30,15 +32,15 @@ const Home = () => {
         <button className="border border-cyan-400 text-white rounded py-2 px-6
                            hover:bg-cyan-400 hover:text-blue-950 active:scale-95 
                            shadow-[0_0_15px_rgba(34,211,238,0.6)] hover:shadow-[0_0_25px_rgba(34,211,238,0.8)]
-                           transition-all duration-500 ease-in-out">
-          Works
+                           transition-all duration-500 ease-in-out font-bold">
+          <a href={Resume}>Resume</a>
         </button>
 
         <button className="border border-transparent rounded py-2 px-6 bg-white text-blue-950 
                            hover:border-cyan-400 hover:bg-blue-950 hover:text-white active:scale-95 
                            shadow-[0_0_15px_rgba(255,255,255,0.4)] hover:shadow-[0_0_25px_rgba(34,211,238,0.8)]
-                           transition-all duration-500 ease-in-out">
-          Want To Hire
+                           transition-all duration-500 ease-in-out font-bold">
+           <Link to='/contact' onClick={() => window.scrollTo(0, 0)}>Hire Me</Link>
         </button>
       </div>
     </div>
@@ -56,7 +58,7 @@ const Home = () => {
     </div>
   </section>
 
-  {/* 💠 SKILLS SECTION */}
+  {/* SKILLS SECTION */}
   <section className="bg-linear-to-r from-[#000015] via-[#22638f] to-[#000015] 
                      py-20 px-6 sm:px-10 md:px-16 lg:px-24 transition-all duration-700 ease-in-out">
     <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold mb-14 tracking-wide drop-shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-fadeInUp">
@@ -94,7 +96,7 @@ const Home = () => {
     </div>
   </section>
 
-  {/* 🚀 PROJECTS SECTION */}
+  {/* PROJECTS SECTION */}
   <section className="bg-linear-to-r from-[#000015] via-[#22638f] to-[#000015] py-20 px-6 sm:px-10 md:px-16 lg:px-24 flex items-center justify-center transition-all duration-700 ease-in-out">
     <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-10 
                     bg-white/5 backdrop-blur-md border border-cyan-400/30 rounded-2xl 
@@ -120,11 +122,12 @@ const Home = () => {
                            hover:bg-cyan-400 hover:text-blue-950 active:scale-95 
                            shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_35px_rgba(34,211,238,0.8)]
                            transition-all duration-500 ease-in-out">
-          VISIT
+          <Link to='/projects' onClick={() => window.scrollTo(0, 0)}>Visit</Link>
         </button>
       </div>
     </div>
   </section>
+  <Footer/>
 </div>
 
   );

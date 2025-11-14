@@ -1,44 +1,27 @@
 import React from "react";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import Project from "../components/Project";
 
 const Projects = () => {
   return (
-  <div className="bg-linear-to-r from-[#000015] via-[#22638f] to-[#000015] min-h-screen flex items-center justify-center py-10 px-6 sm:px-10 md:px-16 lg:px-24 overflow-hidden">
-
-  {/* Inner Card */}
-  <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-10 
-                  bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl 
-                  shadow-[0_0_25px_rgba(34,211,238,0.15)] p-8 sm:p-10 md:p-12 
-                  hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] transition-all duration-500 ease-in-out">
-
-    {/* Left Section (Image) */}
-    <div className="w-full md:w-1/2 flex justify-center">
-      <img
-        src="https://i.pinimg.com/1200x/8a/40/90/8a4090f34d5e44b12b59cf71b11f68c5.jpg"
-        alt="Projects Preview"
-        className="w-[280px] sm:w-[350px] md:w-[400px] lg:w-[450px] rounded-xl object-cover opacity-80
-                   shadow-lg transition-transform duration-500 hover:scale-105"
-      />
+    <div>
+      <Nav />
+      <div>
+        <h2 className="bg-linear-to-r from-[#000015] via-[#22638f] to-[#000015] flex justify-center items-center  text-3xl sm:text-4xl md:text-5xl  py-20 text-cyan-300 font-bold">PROJECTS</h2>
+        <Project
+          url="https://images.unsplash.com/photo-1679110451343-f3e151ba42f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fFNOQUtFJTIwR0FNRXxlbnwwfHwwfHx8MA%3D%3D"
+          title="SNAKE GAME"
+          link="https://snake-game-two-lac.vercel.app/"
+        />
+        <Project
+          url="https://images.unsplash.com/photo-1663882658055-40f1d4249867?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcxfHx3ZWJzaXRlfGVufDB8fDB8fHww"
+          title="Vision Craft"
+          link="https://project-1-beige-seven.vercel.app/"
+        />
+      </div>
+      <Footer />
     </div>
-
-    {/* Right Section (Text + Button) */}
-    <div className="flex flex-col items-center md:items-center text-center md:text-left gap-4">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-wide">
-        PROJECTS & WORKS
-      </h2>
-
-      <h4 className="text-xl sm:text-2xl text-cyan-400 font-semibold">
-        WANT TO VISIT?
-      </h4>
-
-      <button className="mt-4 border border-cyan-400 py-2 px-6 rounded-lg text-white font-semibold 
-                         hover:bg-cyan-400 hover:text-blue-950 transition-all duration-300 
-                         shadow-[0_0_15px_rgba(34,211,238,0.2)] hover:shadow-[0_0_25px_rgba(34,211,238,0.4)]">
-        VISIT
-      </button>
-    </div>
-  </div>
-</div>
-
   );
 };
 
