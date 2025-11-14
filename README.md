@@ -91,3 +91,19 @@ Open to improvements, enhancements, or UI refinements:
 * Suggest layout or UX improvements.
 
 ---
+
+Perfect! Here’s a polished version of the **License section** you can add to your README:
+
+---
+
+## License
+
+This project is **open source** and licensed under the **MIT License**.
+
+### Usage Guidelines
+
+* You are free to **use, modify, and distribute** this project.
+* Please provide **proper credit** to the original author.
+* **Notify the author** if you plan to use this project in a commercial application.
+
+---
