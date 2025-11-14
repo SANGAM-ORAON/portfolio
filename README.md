@@ -1,12 +1,93 @@
-# React + Vite
+A **personal portfolio web application designed to showcase your skills, projects, and contact information—all built with **React** and **Tailwind CSS** for a modern, responsive, and interactive UI/UX experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Skills Showcase**: Visually appealing, dynamic skill cards highlighting your expertise.
+* **Projects Gallery**: Interactive project displays with details, screenshots, and links.
+* **Contact Form**: Built-in form for smooth messaging and inquiries.
+* **Navigation & Footer**: Clear and professional navigation for seamless browsing.
+* **Asset Integration**: Local resume PDF and personal logo for branding.
+* **Responsive Design**: Mobile-first, fully adaptive layout with Tailwind CSS utilities.
+* **Animations & Transitions**: Smooth hover effects, page transitions, and interactive elements.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Folder Structure
+
+```
+/public
+  logo.png           # Personal branding logo
+  resume.pdf         # Downloadable resume
+
+/src
+  assets/            # Images, icons, PDFs, and other static resources
+  components/
+    ContactForm.jsx  # Contact form component
+    Footer.jsx       # Footer component with links & social media
+    Nav.jsx          # Navigation bar
+    Project.jsx      # Single project card/component
+    Skill.jsx        # Single skill card/component
+  pages/
+    About.jsx        # About me section
+    Contact.jsx      # Contact page and alternative contact info
+    Home.jsx         # Landing page
+    Projects.jsx     # Projects listing page
+    Skills.jsx       # Skills listing page
+  App.jsx            # Root application component
+  main.jsx           # Application entry point
+  index.css          # Tailwind and global styles
+
+Configuration:
+  vite.config.js      # Vite setup
+  eslint.config.js    # ESLint for code quality
+  .gitignore
+  package.json
+```
+
+---
+
+## Modern Concepts Implemented
+
+* **UI/UX Best Practices**: Mobile-first design, clean layouts, modern colors, and smooth animations.
+* **Interactive Components**: Forms, project cards, and navigation with live feedback.
+* **Accessibility**: Semantic HTML, keyboard-friendly navigation, and screen reader support.
+* **Tailwind CSS**: Utility-first styling for speed, responsiveness, and consistency.
+* **Link & Asset Integration**: Easy access to social links, projects, and downloadable resume.
+
+---
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+Visit `http://localhost:3000` to see your portfolio in action.
+
+---
+
+## Customization
+
+* Replace `src/assets/logo.png` with your personal logo.
+* Replace `src/assets/resume.pdf` with your latest resume.
+* Update skills in `Skills.jsx` and `Skill.jsx`.
+* Update projects in `Projects.jsx` and `Project.jsx`.
+* Add social links or custom navigation in `Nav.jsx` and `Footer.jsx`.
+
+---
+
+## Contributing
+
+Open to improvements, enhancements, or UI refinements:
+
+* Add new projects or skills.
+* Improve animations or page transitions.
+* Suggest layout or UX improvements.
+
+---
